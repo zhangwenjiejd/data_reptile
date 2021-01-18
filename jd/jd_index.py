@@ -33,7 +33,7 @@ class tmal():
 
         # 画布放置图片
         self.canvas = tk.Canvas(self.window, height=400, width=500)
-        self.im = Image.open("d:/lytmal/image/2.png")
+        self.im = Image.open("/Users/zhangwenjie10/PycharmProjects/data_reptile/image/2.png")
         self.imagefile = ImageTk.PhotoImage(self.im)
         # imagefile=tk.PhotoImage(file='71.gif')
         image = self.canvas.create_image(0, 0, anchor='nw', image=self.imagefile)
@@ -101,7 +101,7 @@ class tmal():
 
         #画布放置图片
         self.canvas=tk.Canvas(self.window_info_up,height=800,width=1250)
-        self.im=Image.open("d:/lytmal/image/5.jpg")
+        self.im=Image.open("/Users/zhangwenjie10/PycharmProjects/data_reptile/image/5.jpg")
         self.imagefile=ImageTk.PhotoImage(self.im)
         # imagefile=tk.PhotoImage(file='71.gif')
         self.canvas.create_image(0,0,anchor='nw',image=self.imagefile)
@@ -158,8 +158,8 @@ class tmal():
                                 show='headings')
 
         self.box.column('1', width=400, anchor='center')
-        self.box.column('2', width=250, anchor='center')
-        self.box.column('3', width=250, anchor='center')
+        self.box.column('2', width=100, anchor='center')
+        self.box.column('3', width=100, anchor='center')
         self.box.column('4', width=250, anchor='center')
         self.box.heading('1', text='商品标题')
         self.box.heading('2', text='价格')
@@ -259,7 +259,7 @@ class tmal():
         window_sign_up.title('注册界面')
         #画布放置图片
         canvas=tk.Canvas(window_sign_up,height=300,width=500)
-        im=Image.open("d:/lytmal/image/2.png")
+        im=Image.open("/Users/zhangwenjie10/PycharmProjects/data_reptile/image/2.png")
         imagefile=ImageTk.PhotoImage(im)
         # imagefile=tk.PhotoImage(file='71.gif')
         image1=canvas.create_image(0,0,anchor='nw',image=imagefile)

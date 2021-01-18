@@ -22,8 +22,8 @@ class JdSearcher(Thread):
 
         self.totalpage = totalpage
         self.interval = interval
-        self.rootpath = "d:/lytmal"
-        self.outpath = "d:/lytmal"
+        self.rootpath = "/Users/zhangwenjie10/PycharmProjects/data_reptile"
+        self.outpath = "/Users/zhangwenjie10/PycharmProjects/data_reptile"
         self.excel = ExcelUtil()
 
     def run(self):
@@ -36,7 +36,7 @@ class JdSearcher(Thread):
 
     def search(self, content, box, totalpage=1, interval=3):
 
-        self.browser = webdriver.Chrome(self.rootpath + "/driver/chromedriver_1.exe")
+        self.browser = webdriver.Chrome(self.rootpath + "/driver/chromedriver")
         self.browser.maximize_window()
         try:
             wait1 = WebDriverWait(self.browser, 300)
